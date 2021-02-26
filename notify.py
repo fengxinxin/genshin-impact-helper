@@ -233,7 +233,7 @@ class Notify(object):
         conf = ['钉钉机器人', 'DD_BOT_TOKEN', DD_BOT_TOKEN, 'errcode', 0]
         name, needs, token, text, code  = conf
 
-        return self.pushTemplate('post', url, data=data, name=name, needs=needs, token=token, text=text, code=code)
+        return self.pushTemplate('post', url, json=data, name=name, needs=needs, token=token, text=text, code=code)
 
     def wwBot(self, text, status, desp):
         WW_BOT_KEY = self.WW_BOT_KEY
